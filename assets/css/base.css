@@ -1,0 +1,65 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #4D4D4D;
+    --gray-color: #333;
+    --green-color: #28b241;
+    --primary-color: #f65e39;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+ /* tạo hiệu ứng chuyển động fade */
+ .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+ @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+ @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* btn */
+.btn.btn-readmore {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 30px;
+    outline: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    height: 40px;
+    width: 132px;
+    line-height: 36px;
+    border: none;
+    text-align: center;
+    letter-spacing: 0;
+    background-color: var(--white-color);
+    color: var(--gray-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0;
+    cursor: pointer;
+    box-shadow: 0 2px 1px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%);
+}
+
+.btn.btn-readmore:hover {
+    box-shadow: 0 2px 3px rgb(0 0 0 / 10%), 0 4px 8px rgb(0 0 0 / 30%);
+    background: var(--green-color);
+    color: var(--white-color);
+}
+

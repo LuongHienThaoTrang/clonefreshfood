@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Food</title>
+    <link rel="icon" href="./assets/img/logo__freshfood.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/freshfood.js">
+</head>
+<body>
+    <div class="main">
+        <!-- HEADER -->
+        <div class="header">
+            <div class="grid wide">
+                <div class="row">
+                    <!-- HEADER LOGO -->
+                    <div class="col l-5 m-12 c-12">
+                        <div class="row">
+                            <div class="col l-12 m-12 c-12 tablet-bars-logo">
+                                <!-- HEADER BARS -->
+                                <label for="nav-mobile-input" class="header__bars hide-on-pc">
+                                    <i class="fa-solid fa-bars"></i>
+                                </label>
+                                <input type="checkbox" hidden name="" class="nav__input" id="nav-mobile-input">
+                                <!-- OVERLAY -->
+                                <label for="nav-mobile-input" class="header__overlay"></label>
+                               <!-- OVERLAY LISt -->
+                               <ul class="header__navbar-mobile-list hide-on-pc">
+                                <li class="header__navbar-mobile-item">
+                                    <a href="" class="header__navbar-mobile-item-link">
+                                        <span>MENU</span>
+                                        <label for="nav-mobile-input" class="header__bars-close">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </label>
+                                    </a>
+                                </li>
+                                <li class="header__navbar-mobile-item">
+                                    <a href="" class="header__navbar-mobile-item-link">
+                                        <span>
+                                            <!-- <i class="fa-solid fa-house-chimney"></i> -->
+                                            Trang chủ
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="header__navbar-mobile-item">
+                                    <a href="" class="header__navbar-mobile-item-link">
+                                        <span>
+                                            <!-- <i class="fa-brands fa-product-hunt"></i> -->
+                                            Sản phẩm
+                                            <i class="sub-arrow fas fa-caret-right"></i>
+                                        </span>
+                                    </a>
+                                    <ul class="subnav__menu">
+                                        <li>
+                                            <a href="" class="has-submenu">
+                                                <span>Rau củ quả</span>
+                                                <span class="subnav-arrow"></span>
+                                            </a>
+                                            <ul class="dropdown-menu animate__animated animate__fadeInDown">
+                                                <li>
+                                                    <a href="">Rau ăn củ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Rau ăn quả</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Rau ăn quả</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Trái cây</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="" class="has-submenu">
+                                                <span>Thực phẩm tươi sống</span>
+                                                <span class="subnav-arrow"></span>
+                                            </a>
+                                            <ul class="dropdown-menu animate__animated animate__fadeInRight">
+                                                <li>
+                                                    <a href="">Thịt các loại</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Hải sản</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Trứng</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="" class="has-submenu">
+                                                <span>Thực phẩm khô</span>
+                                                <span class="subnav-arrow"></span>
+                                            </a>
+                                            <ul class="dropdown-menu animate__animated animate__fadeInUp">
+                                                <li>
+                                                    <a href="">Thực phẩm chay</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Bánh mì - Bánh ngọt</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Gạo - Ngũ cốc</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Thực phẩm ăn liền</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">Thực phẩm bổ dưỡng</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Thực phẩm chế biến</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__navbar-mobile-item">
+                                    <a href="" class="header__navbar-mobile-item-link">
+                                        <span>
+                                            <!-- <i class="fa-solid fa-blog"></i> -->
+                                            Blog
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="header__navbar-mobile-item">
+                                    <a href="" class="header__navbar-mobile-item-link">
+                                        <span>
+                                            <!-- <i class="fa-solid fa-address-book"></i> -->
+                                            Giới thiệu
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="header__navbar-mobile-item">
+                                    <a href="" class="header__navbar-mobile-item-link">
+                                        <span>
+                                            <!-- <i class="fa-solid fa-address-book"></i> -->
+                                            Liên hệ
+                                        </span>
+                                    </a>
+                                </li>
+                                </ul>
+                                <!-- HEADER LOGO -->
+                                <div class="header__logo">
+                                    <a href="/index.html">
+                                        <img src="https://hstatic.net/349/1000150349/1000203344/logo.png?v=28" alt="fresh-food">
+                                    </a>
+                                </div>
+                                <!-- HEADER USER -->
+                                <div class="header__user hide-on-pc">
+                                    <i class="header__user-icon fa-solid fa-user"></i>
+                                </div>
+                                <!-- HEADER -->
+                                <div class="header__cart-tablet hide-on-pc">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <div class="header__cart-number">0</div>    
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- HEADER INFO -->
+                    <div class="col l-7">
+                    <div class="header_info hide-on-tablet hide-on-mobile">
+                        <div class="header__cart">
+                            <a href="" class="header__cart-link">
+                                <span class="header__cart-icon"></span>
+                                <div class="header__cart-number">0</div>    
+                            </a>
+                            <div class="header__cart-view">
+                                <table id="cart-view">
+                                    <thead style="font-size:1.3rem;">
+                                        <tr>
+                                            <th>Sản phẩm</th>
+                                            <th>Giá</th>
+                                            <th>Số lượng</th>
+                                            <th>Chọn</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="total-product">
+
+                                    </tbody>
+                                </table>
+                                <span class="line"></span>
+                                <table class="table__total">
+                                    <tbody>
+                                        <tr class="table__total-prices">
+                                            <td class="text-left">TỔNG TIỀN:</td>
+                                            <td class="text-right" id="total-view-cart">0đ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="" class="view-cart">
+                                                    Xem giỏ hàng
+                                                    
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="" class="view-total">Thanh toán</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="header__navholder">
+                            <nav id="header__subnav">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="fa fa-phone"></i>
+                                            1900.636.099
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">Đăng ký</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Đăng nhập</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="header__line">
+                                <p>
+                                    Miễn phí vận chuyển
+                                    <span>Đơn hàng trên 900k</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-7">
+                        <div class="header__navbar hide-on-tablet hide-on-mobile">
+                            <ul class="header__navbar-list">
+                                <li class="header__navbar-item">
+                                    <a href="" class="header__navbar-item-link">
+                                        <span style="color: var(--green-color);">Trang chủ</span>
+                                    </a>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a href="" class="header__navbar-item-link">
+                                        <span>
+                                            Sản phẩm
+                                            <i class="sub-arrow fas fa-caret-down"></i>
+                                        </span>
+                                    </a>
+                                    <ul class="subnav__menu">
+                                        <li>
+                                            <a href="" class="has-submenu">
+                                                <span>Rau củ quả</span>
+                                                <span class="subnav-arrow"></span>
+                                            </a>
+                                            <ul class="dropdown-menu animate__animated animate__fadeInDown">
+                                                <li>
+                                                    <a href="">Rau ăn củ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Rau ăn quả</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Rau ăn quả</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Trái cây</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="" class="has-submenu">
+                                                <span>Thực phẩm tươi sống</span>
+                                                <span class="subnav-arrow"></span>
+                                            </a>
+                                            <ul class="dropdown-menu animate__animated animate__fadeInRight">
+                                                <li>
+                                                    <a href="">Thịt các loại</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Hải sản</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Trứng</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="" class="has-submenu">
+                                                <span>Thực phẩm khô</span>
+                                                <span class="subnav-arrow"></span>
+                                            </a>
+                                            <ul class="dropdown-menu animate__animated animate__fadeInUp">
+                                                <li>
+                                                    <a href="">Thực phẩm chay</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Bánh mì - Bánh ngọt</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Gạo - Ngũ cốc</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Thực phẩm ăn liền</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">Thực phẩm bổ dưỡng</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Thực phẩm chế biến</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a href="" class="header__navbar-item-link">
+                                        <span>Blog</span>
+                                    </a>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a href="" class="header__navbar-item-link">
+                                        <span>Giới thiệu</span>
+                                    </a>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a href="" class="header__navbar-item-link">
+                                        <span>Liên hệ</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        
+                    </div>
+                    <div class="col l-5 m-12 c-12">
+                        <div class="header__search">
+                            <form action="">
+                                <input type="text" placeholder="Tìm kiếm..." class="input__search">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SLIDER -->
+        <div class="slider">
+            <div class="mySlides fade">
+                <img src="//hstatic.net/349/1000150349/1000203344/slideshow_1.jpg?v=28" alt="Rau củ quả" class="slider__img">
+                <div class="text-content animate__animated animate__pulse">
+                    <div class="text-heading">Rau củ quả</div>
+                    <h2 class="text-description">Tươi ngon mỗi ngày</h2>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="//hstatic.net/349/1000150349/1000203344/slideshow_2.jpg?v=28" alt="Thực phẩm sạch" class="slider__img">
+                <div class="text-content animate__animated animate__fadeInLeft">
+                    <div class="text-heading">Thực phẩm sạch</div>
+                    <h2 class="text-description">Đảm bảo sức khỏe</h2>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="//hstatic.net/349/1000150349/1000203344/slideshow_3.jpg?v=28" alt="Tháng vàng ưu đãi" class="slider__img">
+                <div class="text-content animate__animated animate__fadeInRight">
+                    <div class="text-heading">Tháng vàng ưu đãi</div>
+                    <h2 class="text-description">Tiết kiệm đến 20%</h2>
+                </div>
+            </div>
+            <!-- Nút điều khiển mũi tên-->
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>     
+        <!-- CONTENT -->
+        <div class="content">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-12">
+                        <div class="container">
+                            <!-- PRODUCT LIST -->
+                            <div class="container__product-list">
+                                <div class="row">
+                                    <div class="col l-12 m-12 c-12">
+                                        <div class="container__header">
+                                            <h2>What hot</h2>
+                                            <h3>Sản phẩm nổi bật</h3>
+                                            <span class="icon">
+                                                <img src="//hstatic.net/349/1000150349/1000203344/icon_featured.png?v=28" alt="">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row content-product-list">
+                                    <div class="col l-3 m-3 c-6 product-list">
+                                        <div class="product-item" style="height:336px">
+                                            <img src="//product.hstatic.net/1000150349/product/upload_large.jpg" alt="Bắp bò Úc giá tay" class="first-img">
+                                            <div class="detail-product">
+                                                <img src="//product.hstatic.net/1000150349/product/upload_3748ad092df94267b00bced261af6380_large.jpg" alt="Bắp bò Úc giá tay" class="animate__animated animate__slideInLeft second-img">
+                                                <div class="control animate__animated animate__slideInRight">
+                                                    <i class="control-icon icon-cart icon-cart fa fa-shopping-bag"></i>
+                                                    <i class="control-icon fa fa-clone"></i>
+                                                    <i class="control-icon fa fa-eye"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail">
+                                                <h3 class="product-name">
+                                                    <a href="">Bắp bò Úc giá tay</a>
+                                                </h3>
+                                                <div class="product-prices">
+                                                    <span class="product-price">73.500₫</span>
+                                                    <p class="product-price-del"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-3 c-6 product-list">
+                                        <div class="product-item" style="height: 336px">
+                                            <img src="//product.hstatic.net/1000150349/product/upload_cc45667329cf4d36a0aa830e0ea4515e_large.jpg" alt="Bắp cải tím Đà Lạt PF" class="first-img">
+                                            <div class="detail-product">
+                                                <img src="//product.hstatic.net/1000150349/product/upload_8b0f433c86784b44ae25bf66503b774e_large.jpg" alt="Bắp cải tím Đà Lạt PF" class="animate__animated animate__slideInLeft second-img">
+                                                <div class="control animate__animated animate__slideInRight">
+                                                    <i class="control-icon icon-cart fa fa-shopping-bag"></i>
+                                                    <i class="control-icon fa fa-clone"></i>
+                                                    <i class="control-icon fa fa-eye"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail">
+                                                <h3 class="product-name">
+                                                    <a href="">Bắp cải tím Đà Lạt PF</a>
+                                                </h3>
+                                                <div class="product-prices">
+                                                    <p class="product-price">20.500₫</p>
+                                                    <p class="product-price-del"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-3 c-6 product-list">
+                                        <div class="product-item" style="height: 336px">
+                                            <img src="//product.hstatic.net/1000150349/product/upload_aeb5dd776f03427ea7f42e264201c1c3_large.jpg" alt="Bắp giò heo Vissan" class="first-img">
+                                            <div class="detail-product">
+                                                <img src="//product.hstatic.net/1000150349/product/upload_13c5b2651ab24bb784762220cc46e632_large.jpg" alt="Bắp giò heo Vissan" class="animate__animated animate__slideInLeft second-img">
+                                                <div class="control animate__animated animate__slideInRight">
+                                                    <i class="control-icon icon-cart fa fa-shopping-bag"></i>
+                                                    <i class="control-icon fa fa-clone"></i>
+                                                    <i class="control-icon fa fa-eye"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail">
+                                                <h3 class="product-name">
+                                                    <a href="">Bắp giò heo Vissan</a>
+                                                </h3>
+                                                <div class="product-prices">
+                                                    <p class="product-price">22.400₫</p>
+                                                    <p class="product-price-del"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-3 c-6 product-list">
+                                        <div class="product-item" style="height: 336px">
+                                            <img src="//product.hstatic.net/1000150349/product/upload_8f075bca052b4103bddd42961efb0f78_large.jpg" alt="Bí ngòi xanh Đà Lạt" class="first-img">
+                                            <div class="detail-product">
+                                                <img src="//product.hstatic.net/1000150349/product/upload_0b34afdd589e4b00a36f4cde9c480e19_large.jpg" alt="Bí ngòi xanh Đà Lạt" class="animate__animated animate__slideInLeft second-img">
+                                                <div class="control animate__animated animate__slideInRight">
+                                                    <i class="control-icon icon-cart fa fa-shopping-bag"></i>
+                                                    <i class="control-icon fa fa-clone"></i>
+                                                    <i class="control-icon fa fa-eye"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail">
+                                                <h3 class="product-name">
+                                                    <a href="">Bí ngòi xanh Đà Lạt</a>
+                                                </h3>
+                                                <div class="product-prices">
+                                                    <p class="product-price">12.000₫</p>
+                                                    <p class="product-price-del"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-3 c-6 product-list">
+                                        <div class="product-item" style="height: 336px">
+                                            <img src="//product.hstatic.net/1000150349/product/upload_010927338b8b4eed8ad0fa9297428b22_large.jpg" alt="Cá bạc má" class="first-img">
+                                            <div class="detail-product">
+                                                <img src="//product.hstatic.net/1000150349/product/upload_0420ba87242941e08465129eb51ef117_large.jpg" alt="Cá bạc má" class="animate__animated animate__slideInLeft second-img">
+                                                <div class="control animate__animated animate__slideInRight">
+                                                    <i class="control-icon icon-cart fa fa-shopping-bag"></i>
+                                                    <i class="control-icon fa fa-clone"></i>
+                                                    <i class="control-icon fa fa-eye"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail">
+                                                <h3 class="product-name">
+                                                    <a href="">Cá bạc má</a>
+                                                </h3>
+                                                <div class="product-prices">
+                                                    <p class="product-price">62.400₫</p>
+                                                    <p class="product-price-del"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-3 c-6 product-list">
+                                        <div class="product-item" style="height: 336px">
+                                            <img src="//product.hstatic.net/1000150349/product/upload_7ebac85521574141bb0a1861db7b3b86_large.jpg" alt="Cá basa không đầu" class="first-img">
+                                            <div class="detail-product">
+                                                <img src="//product.hstatic.net/1000150349/product/upload_03e97643c6dd4f52a86a800a13d277d1_large.jpg" alt="Cá basa không đầu" class="animate__animated animate__slideInLeft second-img">
+                                                <div class="control animate__animated animate__slideInRight">
+                                                    <i class="control-icon icon-cart fa fa-shopping-bag"></i>
+                                                    <i class="control-icon fa fa-clone"></i>
+                                                    <i class="control-icon fa fa-eye"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail">
+                                                <h3 class="product-name">
+                                                    <a href="">Cá basa không đầu</a>
+                                                </h3>
+                                                <div class="product-prices">
+                                                    <p class="product-price">45.000₫</p>
+                                                    <p class="product-price-del"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-3 c-6 product-list">
+                                        <div class="product-item" style="height: 336px">
+                                            <div class="product-sale">
+                                                <span>
+                                                    <label for="" class="sale">- </label>
+                                                    22%
+                                                </span>
+                                            </div>
+                                            <img src="//product.hstatic.net/1000150349/product/upload_174f90bcf9e84cf59e03fc0e22073546_large.jpg" alt="Cá basa phi lê" class="first-img">
+                                            <div class="detail-product">
+                                                <img src="//product.hstatic.net/1000150349/product/upload_28be3b7aff25414ca30f50857eaf7c20_large.jpg" alt="Cá basa phi lê" class="animate__animated animate__slideInLeft second-img">
+                                                <div class="control animate__animated animate__slideInRight">
+                                                    <i class="control-icon icon-cart fa fa-shopping-bag"></i>
+                                                    <i class="control-icon fa fa-clone"></i>
+                                                    <i class="control-icon fa fa-eye"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail">
+                                                <h3 class="product-name">
+                                                    <a href="">Cá basa phi lê</a>
+                                                </h3>
+                                                <div class="product-prices">
+                                                    <p class="product-price">19.500₫</p>
+                                                    <p class="product-price-del">25.000₫</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-3 c-6 product-list">
+                                        <div class="product-item" style="height: 336px">
+                                            <img src="//product.hstatic.net/1000150349/product/upload_1b00c27ada6543d5b5601b02197627da_large.jpg" alt="Cà chua Đà Lạt" class="first-img">
+                                            <div class="detail-product">
+                                                <img src="//product.hstatic.net/1000150349/product/upload_0fa1f640a6084b25952482199d08b6e8_large.jpg" alt="Cà chua Đà Lạt" class="animate__animated animate__slideInLeft second-img">
+                                                <div class="control animate__animated animate__slideInRight">
+                                                    <i class="control-icon icon-cart fa fa-shopping-bag"></i>
+                                                    <i class="control-icon fa fa-clone"></i>
+                                                    <i class="control-icon fa fa-eye"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail">
+                                                <h3 class="product-name">
+                                                    <a href="">Cà chua Đà Lạt</a>
+                                                </h3>
+                                                <div class="product-prices">
+                                                    <p class="product-price">11.000₫</p>
+                                                    <p class="product-price-del"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-12 m-12 c-12 pull-center">
+                                        <a href="" class="btn btn-readmore">Xem thêm</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-12 m-12 c-12">
+                                        <div class="content__banner">
+                                            <div class="banner-1">
+                                                <div class="banner-content">
+                                                    <span class="banner-content-1">
+                                                        Miễn phí vận chuyển
+                                                        <strong class="banner-content-2">Với tất cả đơn hàng trên 500k</strong>
+                                                    </span>
+                                                    <span class="banner-content-description">Miễn phí 2 ngày vận chuyển với đơn hàng trên 500k trừ trực tiếp khi thanh toán</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-12 m-12 c-12">
+                                        <div class="container__header">
+                                            <h3>Sản phẩm mới</h3>
+                                            <span class="icon">
+                                                <img src="//hstatic.net/349/1000150349/1000203344/icon_sale.png?v=28" alt="">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row content-product-list">
+                                    <div class="col l-3 m-3 c-6 product-list">
+                                        <div class="product-item" style="height: 336px">
+                                            <img src="//product.hstatic.net/1000150349/product/upload_dea02f30a6374099b9a2ccd889296c1a_large.jpg" alt="Ổi lê Đài Loan" class="first-img">
+                                            <div class="detail-product">
+                                                <img src="//product.hstatic.net/1000150349/product/upload_bc869ed39974421b86137914956fde8c_large.jpg" alt="Ổi lê Đài Loan" class="animate__animated animate__slideInLeft second-img">
+                                                <div class="control animate__animated animate__slideInRight">
+                                                    <i class="control-icon icon-cart fa fa-shopping-bag"></i>
+                                                    <i class="control-icon fa fa-clone"></i>
+                                                    <i class="control-icon fa fa-eye"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail">
+                                                <h3 class="product-name">
+                                                    <a href="">Ổi lê Đài Loan</a>
+                                                </h3>
+                                                <div class="product-prices">
+                                                    <p class="product-price">16.200₫</p>
+                                                    <p class="product-price-del"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-3 c-6 product-list">
+                                        <div class="product-item" style="height: 336px">
+                                            <img src="//product.hstatic.net/1000150349/product/upload_5ee2dc620eaa4265b589990ca83b0e5d_large.jpg" alt="Ớt chuông đỏ Đà Lạt PF" class="first-img">
+                                            <div class="detail-product">
+                                                <img src="//product.hstatic.net/1000150349/product/upload_9a3b9ad4bf20497e9fcc0f982b0fc3e8_large.jpg" alt="Ớt chuông đỏ Đà Lạt PF" class="animate__animated animate__slideInLeft second-img">
+                                                <div class="control animate__animated animate__slideInRight">
+                                                    <i class="control-icon icon-cart fa fa-shopping-bag"></i>
+                                                    <i class="control-icon fa fa-clone"></i>
+                                                    <i class="control-icon fa fa-eye"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail">
+                                                <h3 class="product-name">
+                                                    <a href="">Ớt chuông đỏ Đà Lạt PF</a>
+                                                </h3>
+                                                <div class="product-prices">
+                                                    <p class="product-price">51.000₫</p>
+                                                    <p class="product-price-del"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-3 c-6 product-list">
+                                        <div class="product-item" style="height: 336px">
+                                            <img src="//product.hstatic.net/1000150349/product/upload_4e6d173e447f42178394cb311c91bc8f_large.jpg" alt="Ớt sừng đỏ Đà Lạt" class="first-img">
+                                            <div class="detail-product">
+                                                <img src="//product.hstatic.net/1000150349/product/upload_9c9a33cb15eb475e9e5747ee38460586_large.jpg" alt="Ớt sừng đỏ Đà Lạt" class="animate__animated animate__slideInLeft second-img">
+                                                <div class="control animate__animated animate__slideInRight">
+                                                    <i class="control-icon icon-cart fa fa-shopping-bag"></i>
+                                                    <i class="control-icon fa fa-clone"></i>
+                                                    <i class="control-icon fa fa-eye"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail">
+                                                <h3 class="product-name">
+                                                    <a href="">Ớt sừng đỏ Đà Lạt</a>
+                                                </h3>
+                                                <div class="product-prices">
+                                                    <p class="product-price">93.000₫</p>
+                                                    <p class="product-price-del"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-3 c-6 product-list">
+                                        <div class="product-item" style="height: 336px">
+                                            <img src="//product.hstatic.net/1000150349/product/upload_16e9405a46d04e27a9795085dacee09e_large.jpg" alt="Sườn chặt heo" class="first-img">
+                                            <div class="detail-product">
+                                                <img src="//product.hstatic.net/1000150349/product/upload_00eff26986794c4fbd79c1bca7199de5_large.jpg" alt="Sườn chặt heo" class="animate__animated animate__slideInLeft second-img">
+                                                <div class="control animate__animated animate__slideInRight">
+                                                    <i class="control-icon icon-cart fa fa-shopping-bag"></i>
+                                                    <i class="control-icon fa fa-clone"></i>
+                                                    <i class="control-icon fa fa-eye"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail">
+                                                <h3 class="product-name">
+                                                    <a href="">Sườn chặt heo</a>
+                                                </h3>
+                                                <div class="product-prices">
+                                                    <p class="product-price">48.500₫</p>
+                                                    <p class="product-price-del"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-3 c-6 product-list">
+                                        <div class="product-item" style="height: 336px">
+                                            <img src="//product.hstatic.net/1000150349/product/upload_bf970d20a15f4436b4b8cdec1490c564_large.jpg" alt="Thanh long TG PFMN" class="first-img">
+                                            <div class="detail-product">
+                                                <img src="//product.hstatic.net/1000150349/product/upload_6c8958562e6f4bf2bc19fceb328107f9_large.jpg" alt="Thanh long TG PFMN" class="animate__animated animate__slideInLeft second-img">
+                                                <div class="control animate__animated animate__slideInRight">
+                                                    <i class="control-icon icon-cart fa fa-shopping-bag"></i>
+                                                    <i class="control-icon fa fa-clone"></i>
+                                                    <i class="control-icon fa fa-eye"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail">
+                                                <h3 class="product-name">
+                                                    <a href="">Thanh long TG PFMN</a>
+                                                </h3>
+                                                <div class="product-prices">
+                                                    <p class="product-price">28.500₫</p>
+                                                    <p class="product-price-del"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-3 c-6 product-list">
+                                        <div class="product-item" style="height: 336px">
+                                            <img src="//product.hstatic.net/1000150349/product/upload_18e5236c228f4ed38f4fb2a0c4d7f332_large.jpg" alt="Thịt heo xay Vissan" class="first-img">
+                                            <div class="detail-product">
+                                                <img src="//product.hstatic.net/1000150349/product/upload_28f96e10f1f64ae2ba0faa9c717dcfd0_large.jpg" alt="Thịt heo xay Vissan" class="animate__animated animate__slideInLeft second-img">
+                                                <div class="control animate__animated animate__slideInRight">
+                                                    <i class="control-icon icon-cart fa fa-shopping-bag"></i>
+                                                    <i class="control-icon fa fa-clone"></i>
+                                                    <i class="control-icon fa fa-eye"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail">
+                                                <h3 class="product-name">
+                                                    <a href="">Thịt heo xay Vissan</a>
+                                                </h3>
+                                                <div class="product-prices">
+                                                    <p class="product-price">26.400₫</p>
+                                                    <p class="product-price-del"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-3 c-6 product-list">
+                                        <div class="product-item" style="height: 336px">
+                                            <img src="//product.hstatic.net/1000150349/product/upload_e35743698aed4aa3bd209f935888ae92_large.jpg" alt="Tôm thẻ tươi" class="first-img">
+                                            <div class="detail-product">
+                                                <img src="//product.hstatic.net/1000150349/product/upload_b757176952de4666a6e343ee8f333084_large.jpg" alt="Tôm thẻ tươi" class="animate__animated animate__slideInLeft second-img">
+                                                <div class="control animate__animated animate__slideInRight">
+                                                    <i class="control-icon icon-cart fa fa-shopping-bag"></i>
+                                                    <i class="control-icon fa fa-clone"></i>
+                                                    <i class="control-icon fa fa-eye"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail">
+                                                <h3 class="product-name">
+                                                    <a href="">Tôm thẻ tươi</a>
+                                                </h3>
+                                                <div class="product-prices">
+                                                    <p class="product-price">93.500₫</p>
+                                                    <p class="product-price-del"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-3 c-6 product-list">
+                                        <div class="product-item" style="height: 336px">
+                                            <img src="//product.hstatic.net/1000150349/product/upload_89b32d3f1f20439d8cb2f75fe76d5700_large.jpg" alt="Xoài tứ quý" class="first-img">
+                                            <div class="detail-product">
+                                                <img src="//product.hstatic.net/1000150349/product/upload_597e8e86f957481f8a01631560b9ec02_large.jpg" alt="Xoài tứ quý" class="animate__animated animate__slideInLeft second-img">
+                                                <div class="control animate__animated animate__slideInRight">
+                                                    <i class="control-icon icon-cart fa fa-shopping-bag"></i>
+                                                    <i class="control-icon fa fa-clone"></i>
+                                                    <i class="control-icon fa fa-eye"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail">
+                                                <h3 class="product-name">
+                                                    <a href="">Xoài tứ quý</a>
+                                                </h3>
+                                                <div class="product-prices">
+                                                    <p class="product-price">39.200₫</p>
+                                                    <p class="product-price-del"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-12 m-12 c-12 pull-center">
+                                        <a href="" class="btn btn-readmore">Xem thêm</a>
+                                    </div>
+                                </div>
+                                <div class="banner__bottom">
+                                    <div class="row">
+                                        <div class="col l-6 m-6 c-12 banner__bottom-list">
+                                            <div class="banner__bottom-item">
+                                                <a href="">
+                                                    <img src="//hstatic.net/349/1000150349/1000203344/block_home_category1.jpg?v=28" alt="Thực phẩm tươi" class="banner__bottom-img">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col l-6 m-6 c-12 banner__bottom-list">
+                                            <div class="banner__bottom-item">
+                                                <a href="">
+                                                    <img src="//hstatic.net/349/1000150349/1000203344/block_home_category2.jpg?v=28" alt="Thực phẩm sạch" class="banner__bottom-img">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="footer__bottom">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer__bottom-details">
+                                <h3 class="footer__bottom-title">Giới thiệu</h3>
+                                <div class="footer__bottom-about-us">
+                                    <p class="footer__bottom-description">
+                                        Với hơn 100 nhân viên tư vấn trên mọi phương diện, không chỉ là hướng dẫn và xử lý các vấn đề từ Haravan, chúng tôi luôn mong cùng chia sẻ các kinh nghiệm giúp bạn bán được nhiều hàng hơn.
+                                    </p>
+                                    <ul class="footer__bottom-list">
+                                        <li class="footer__bottom-item">
+                                            <i class="fa fa-home"></i>
+                                            56 Vân côi, Q. Tân Bình, Tp.HCM
+                                        </li>
+                                        <li class="footer__bottom-item">
+                                            <i class="fa-solid fa-envelope"></i>
+                                            <a href="mailto:hi@haravan.com">hi@haravan.com</a>
+                                        </li>
+                                        <li class="footer__bottom-item">
+                                            <i class="fa fa-phone"></i>
+                                            1900.636.099
+                                        </li>
+                                        <li class="footer__bottom-item">
+                                            <i class="fa fa-print"></i>
+                                            1900.636.099
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer__bottom-details">
+                                <h3 class="footer__bottom-title">Liên kết</h3>
+                                <div class="footer__bottom-about-us">
+                                    <ul class="footer__bottom-list">
+                                        <li class="footer__bottom-item">
+                                            <a href="">Trang chủ</a>
+                                        </li>
+                                        <li class="footer__bottom-item">
+                                            <a href="">Sản phẩm</a>
+                                        </li>
+                                        <li class="footer__bottom-item">
+                                            <a href="">Blog</a>
+                                        </li>
+                                        <li class="footer__bottom-item">
+                                            <a href="">Giới thiệu</a>
+                                        </li>
+                                        <li class="footer__bottom-item">
+                                            <a href="">Liên hệ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer__bottom-details">
+                                <h3 class="footer__bottom-title">Đăng kí nhận tin</h3>
+                                <div class="footer__bottom-about-us">
+                                   <div class="form-1">
+                                        <input type="email" placeholder="Nhập email của bạn" required class="form-control">
+                                    </div>
+                                    <div class="form-2 form-active">
+                                        <input class="form-submit-btn" type="submit" value="SEND">
+                                    </div>
+                                    <div class="socials">
+                                        <ul class="list-inline">
+                                            <li>
+                                                <span class="social-link">
+                                                <i class="social-link-icon fa-brands fa-facebook-f"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="social-link">
+                                                <i class="social-link-icon fa-brands fa-twitter"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="social-link">
+                                                <i class="social-link-icon fa-brands fa-pinterest"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="social-link">
+                                                <i class="social-link-icon fa-brands fa-google-plus"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="social-link">
+                                                <i class="social-link-icon fa-brands fa-youtube"></i>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="social-link">
+                                                <i class="social-link-icon fa-brands fa-instagram"></i>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer__bottom-details">
+                                <h3 class="footer__bottom-title">Kết nối với chúng tôi</h3>
+                                <div class="footer__bottom-about-us">
+                                    <div class="img">
+                                        <img src="" alt="" >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="grid wide">
+                    <p>
+                        Copyright © 2022 default-fresh-food. 
+                        <a href="">Powered by TrangCute.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/css/freshfood.js">
+        
+    </script>
+</body>
+</html>
