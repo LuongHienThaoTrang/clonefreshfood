@@ -511,6 +511,10 @@ html {
     display: none;
 }
 
+.mySlides.fade {
+    position: relative;
+}
+
 .slider__img {
     width: 100%;
 }
